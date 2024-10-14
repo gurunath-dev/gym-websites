@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>❚█══█❚ Gym Website</title>
+    <meta property="og:title" content="Copy of Gym" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link href='css/owl.carousel.css' rel='stylesheet' type='text/css' />
+    <link href='css/owl.theme.css' rel='stylesheet' type='text/css' />
+    <script  src='js/jquery.min.js' ></script>
+    <script  src='js/jquery.inview.js' defer></script>
+    <script  src='js/owl.carousel.js' defer></script> 
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-header">
+          <header class="header">
+            <nav class="navbar">
+                <img src="public/playground_assets/home-logo.jpeg" class="nav-logo">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#feature" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#price" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="button">Admin</a>
+                  </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <script>
+              const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+            </script>
+    </header>
+        </div>
+        <div class="home-container01">
+          <h1 class="home-text">Be Fit, Be Healthy</h1>
+          <h1 class="home-text001">
+            <span class="home-text002">Make Yourself Stronger</span>
+            <br />
+            <span class="home-text004">Than Your Excuses.</span>
+            <br />
+          </h1>
+          <a href="#contact" class="home-link button">Contact</a>
+          <div id="banner" class="home-banner">
+            <div class="owl-carousel">
+              <div class="item" >
+                <img src="public/playground_assets/home-bg-1.jpg">
+               </div>  
+               <div class="item">
+                <img src="public/playground_assets/home-bg-2.jpg">
+               </div> 
+               <div class="item">
+                <img src="public/playground_assets/home-bg-3.png">
+               </div> 
+            </div>
+          </div>
+          <script>
+            $(document).ready(function(){
+           $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:false,
+
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:false,
+            loop:true
+        }
+    }
+});
+            });
+          </script>
+        </div>
+        <div class="home-about">
+          <div class="home-container02"></div>
+          <div class="home-container03"></div>
+          <div class="home-container04">
+            <h1 id="about" class="home-text006">About Us</h1>
+            <h1 class="home-text007">
+              <span class="home-text008">every day is a chance,</span>
+              <br class="home-text009" />
+              <span class="home-text010">to become better</span>
+              <br />
+            </h1>
+            <h1 class="home-text012">
+              <span class="home-text013">
+                Welcome to PowerFit, where we're all about helping you achieve
+                your fitness goals. We believe that fitness is not just a hobby,
+                but a way of life. Our team of experienced and certified
+                trainers is committed to helping you reach your peak physical
+                condition, whether you're a beginner or a seasoned athlete.
+              </span>
+              <br class="home-text014" />
+              <br class="home-text015" />
+              <span class="home-text016">
+                At PowerFit, we offer a variety of workout options to suit your
+                needs, from cardio machines to strength training equipment. Our
+                facilities are state-of-the-art and designed to provide you with
+                the best workout experience possible. We also offer a range of
+                fitness classes, including yoga and Pilates, led by our skilled
+                Trainers.
+              </span>
+              <br />
+            </h1>
+            <h1 class="home-text018">Workout</h1>
+            <h1 class="home-text019">Strength Training</h1>
+            <h1 class="home-text020">Body and mind</h1>
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M864 128l-480 480-224-224-160 160 384 384 640-640z"
+              ></path>
+            </svg>
+            <h1 class="home-text021">Healthy Life</h1>
+            <svg viewBox="0 0 1024 1024" class="home-icon02">
+              <path
+                d="M864 128l-480 480-224-224-160 160 384 384 640-640z"
+              ></path></svg>
+              <svg viewBox="0 0 1024 1024" class="home-icon04">
+              <path
+                d="M864 128l-480 480-224-224-160 160 384 384 640-640z"
+              ></path></svg>
+              
+              <svg viewBox="0 0 1024 1024" class="home-icon08">
+              <path
+                d="M864 128l-480 480-224-224-160 160 384 384 640-640z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="home-features">
+          <h1 id="feature" class="home-text022">
+            <span>Gym Features</span>
+            <br />
+          </h1>
+          <h1 class="home-text025">
+            <span>Pricing Details</span>
+            <br />
+          </h1>
+          <div class="home-container05">
+            <div class="home-container06">
+              <div class="home-container07">
+                <div class="home-blog-post-card">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/f-img-1-1400w.jpg"
+                    class="home-image"
+                  />
+                  <div class="home-container08">
+                    <span class="home-text028">we provide the best</span>
+                    <span class="home-text029">High Quality Equipment</span>
+                    <span class="home-text030">
+                      When it comes to gym equipment, quality is crucial. High
+                      quality equipment not only provides a better workout
+                      experience, but it also lasts longer, requires less
+                      maintenance, and reduces the risk of injury.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-container09">
+                <div class="home-blog-post-card1">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/f-img-2-1400w.jpg"
+                    class="home-image1"
+                  />
+                  <div class="home-container10">
+                    <span class="home-text031">we provide the best</span>
+                    <span class="home-text032">Best Trainers</span>
+                    <span class="home-text033">
+                      Having qualified and experienced trainers is crucial for
+                      any gym or fitness center. Trainers provide valuable
+                      support and guidance to members, helping them achieve
+                      their fitness goals safely and effectively.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-container11">
+                <div class="home-blog-post-card2">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/f-img-3-1400w.jpg"
+                    class="home-image2"
+                  />
+                  <div class="home-container12">
+                    <span class="home-text034">We provide the best</span>
+                    <span class="home-text035">Variety of Training</span>
+                    <span class="home-text036">
+                      <span>
+                        Variety keeps workouts fresh and engaging, and allows
+                        members to explore different types of exercise to find
+                        what works best for them.&nbsp; &nbsp;
+                      </span>
+                      <br />
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-container13">
+          <div class="home-container14">
+            <div id="price" class="home-pricing-card">
+              <span class="home-text040">bronze</span>
+              <div class="home-container15">
+                <span class="home-text041">₹</span>
+                <span class="home-text042">
+                  <span>1500</span>
+                  <span class="home-text044">/Mo</span>
+                </span>
+              </div>
+              <div class="home-container16">
+                <span class="home-text045">✔ Cardio Exercise</span>
+                <span class="home-text046">✔ Weight Lifting</span>
+                <span class="home-text047">✔ Diet Plan</span>
+                <span class="home-text048">✔ Overall Result</span>
+              </div>
+            </div>
+            <div class="home-pricing-card1">
+              <span class="home-text049">silver</span>
+              <div class="home-container17">
+                <span class="home-text050">₹</span>
+                <span class="home-text051">3000</span>
+                <span class="home-text052">/Mo</span>
+              </div>
+              <div class="home-container18">
+                <span class="home-text053">
+                  <span>✔&nbsp;Personal Training</span>
+                  <br />
+                </span>
+                <span class="home-text056">✔&nbsp;Cardio Exercise</span>
+                <span class="home-text057">✔&nbsp;Weight Lifting</span>
+                <span class="home-text058">✔&nbsp;Diet Plans</span>
+                <span class="home-text059">✔&nbsp; Overall Results</span>
+              </div>
+            </div>
+            <div class="home-pricing-card2">
+              <span class="home-text060">gold</span>
+              <div class="home-container19">
+                <span class="home-text061">₹</span>
+                <span class="home-text062">9000</span>
+                <span class="home-text063">/Mo</span>
+              </div>
+              <div class="home-container20">
+                <span class="home-text064">✔&nbsp;Personal Training</span>
+                <span class="home-text065">✔&nbsp;Cardio Exercise</span>
+                <span class="home-text066">✔&nbsp; Weight Lifting</span>
+                <span class="home-text067">
+                  <span>✔&nbsp; Diet Plans</span>
+                  <br />
+                </span>
+                <span class="home-text070">✔&nbsp; Supplements</span>
+                <span class="home-text071">
+                  <span>✔&nbsp; Massage</span>
+                  <br />
+                </span>
+                <span class="home-text074">✔&nbsp; Sauna</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-stats">
+          <div class="home-stat">
+            <h1 class="home-text075">
+              <span>500</span>
+              <span>+</span>
+            </h1>
+            <span class="home-text078">Happy clients</span>
+          </div>
+          <div class="home-stat1">
+            <h1 class="home-text079">20+</h1>
+            <span class="home-text080">Trainers</span>
+          </div>
+          <div class="home-stat2">
+            <h1 class="home-text081">10+</h1>
+            <span class="home-text082">Years</span>
+          </div>
+          <div class="home-stat3">
+            <h1 class="home-text083"><span>24/7</span></h1>
+            <span class="home-text085">Support</span>
+          </div>
+        </div>
+        
+        <div id="contact" class="home-contact">
+          <div class="containerContact">
+           <form onsubmit="sendEmail(); reset(); return false;" >
+            <h3> Contact Us</h3>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="email" placeholder="Email Id" required>
+            <input type="text" id="phone" placeholder="Phone No" required>
+            <input type="text" id="message" rows="3" placeholder="Message">
+            <button type="submit">Send</button>
+           </form>
+          </div>
+        </div>
+        <div class="home-container21">
+          <footer class="home-footer">
+            <div class="home-container22">
+              <div class="home-logo">
+                <img
+                  alt="logo"
+                  src="public/playground_assets/home-logo 2.jpeg"
+                  class="home-image3"
+                />
+              </div>
+              <div class="home-links-container">
+                <div class="home-container23">
+                  <div class="home-product-container">
+                    <span class="home-text086">Quick Links</span>
+                    <a href="#about" class="home-link1">About</a>
+                    <a href="#feature" class="home-link1">Feature</a>
+                    <span class="home-link1">Pricing</span>
+                    <a href="#gallery" class="home-link1">Contact</a>
+                  </div>
+                  <div class="home-company-container">
+                    <span class="home-text088">Company</span>
+                    <span class="home-text089">
+                      <span>Monday :</span>
+                      <span class="home-text091">5:00am - 10:30am</span>
+                      <br />
+                      <br />
+                      <span>Tuesday :</span>
+                      <span class="home-text095">5:00am - 10:30am</span>
+                      <br />
+                      <br />
+                      <span>Wednesday :</span>
+                      <span class="home-text099">5:00am - 10:30am</span>
+                      <br />
+                      <br />
+                      <span>Thursday:</span>
+                      <span class="home-text103">5:00am - 10:30am</span>
+                      <br />
+                      <br />
+                      <span>Friday :</span>
+                      <span class="home-text107">5:00am - 10:30am</span>
+                      <br class="home-text108" />
+                      <br />
+                      <span>Saturday :</span>
+                      <span class="home-text111">5:00am - 10:30am</span>
+                      <br />
+                      <br />
+                      <span>Sunday :</span>
+                      <span class="home-text115">Closed</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="home-container24">
+                  <div class="home-contact1">
+                    <span class="home-text116">Contact Us</span>
+                    <span class="home-text117">Spartansfit@gmail.com</span>
+                    <span class="home-text118">8667739406</span>
+                  </div>
+                  <div class="home-socials">
+                    <span class="home-text119">Follow Us</span>
+                    <div class="home-icon-group">
+                      <svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="home-icon10"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path></svg>
+                        <svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="home-icon12"
+                      >
+                        <path
+                          d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                        ></path></svg>
+                        <svg
+                        viewBox="0 0 602.2582857142856 1024"
+                        class="home-icon14"
+                      >
+                        <path
+                          d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+      
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "gurudummy@gmail.com",
+    Password : "49725316A75EB2EFC62B6D3F2013BA53B3A9",
+    From : "gurudummy@gmail.com",
+    To : 'guru515@gmail.com',
+    Subject : "New Enquiry",
+    Body : "Name: "+document.getElementById("name").value
+    +"<br> Email: "+document.getElementById("email").value
+    +"<br> Phone No: "+document.getElementById("phone").value
+    +"<br> Message:  "+document.getElementById("message").value
+}).then(
+  message => alert("Message sent, We will contact you back as soon as possible")
+);
+      }
+    </script>
+  </body>
+</html>
